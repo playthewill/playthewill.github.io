@@ -1,0 +1,1290 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml">
+  <head>
+    <!-- ProSite: geometric -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9" /><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"UQYHUlBTGwICVFNWAQUC"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({QJf3ax:[function(t,e){function n(){}function r(t){function e(t){return t&&t instanceof n?t:t?a(t,i,o):o()}function u(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),s=a.length,f=0;s>f;f++)a[f].apply(i,r);var u=c[v[n]];return u&&u.push([w,n,r,i]),i}function d(t,e){m[t]=l(t).concat(e)}function l(t){return m[t]||[]}function p(t){return f[t]=f[t]||r(u)}function h(t,e){s(t,function(t,n){e=e||"feature",v[n]=e,e in c||(c[e]=[])})}var m={},v={},w={on:d,emit:u,get:p,listeners:l,context:e,buffer:h};return w}function o(){return new n}var i="nr@context",a=t("gos"),s=t(1),c={},f={},u=e.exports=r();u.backlog=c},{1:24,gos:"7eSDFh"}],ee:[function(t,e){e.exports=t("QJf3ax")},{}],3:[function(t){function e(t){try{i.console&&console.log(t)}catch(e){}}var n,r=t("ee"),o=t(1),i={};try{n=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(i.console=!0,-1!==n.indexOf("dev")&&(i.dev=!0),-1!==n.indexOf("nr_dev")&&(i.nrDev=!0))}catch(a){}i.nrDev&&r.on("internal-error",function(t){e(t.stack)}),i.dev&&r.on("fn-err",function(t,n,r){e(r.stack)}),i.dev&&(e("NR AGENT IN DEVELOPMENT MODE"),e("flags: "+o(i,function(t){return t}).join(", ")))},{1:24,ee:"QJf3ax"}],4:[function(t){function e(t,e,n,i,a){try{f?f-=1:r("err",[a||new UncaughtException(t,e,n)])}catch(c){try{r("ierr",[c,(new Date).getTime(),!0])}catch(u){}}return"function"==typeof s?s.apply(this,o(arguments)):!1}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function n(t){r("err",[t,(new Date).getTime()])}var r=t("handle"),o=t(6),i=t("ee"),a=t("loader"),s=window.onerror,c=!1,f=0;a.features.err=!0,t(5),window.onerror=e;try{throw new Error}catch(u){"stack"in u&&(t(1),t(2),"addEventListener"in window&&t(3),a.xhrWrappable&&t(4),c=!0)}i.on("fn-start",function(){c&&(f+=1)}),i.on("fn-err",function(t,e,r){c&&(this.thrown=!0,n(r))}),i.on("fn-end",function(){c&&!this.thrown&&f>0&&(f-=1)}),i.on("internal-error",function(t){r("ierr",[t,(new Date).getTime(),!0])})},{1:10,2:9,3:7,4:11,5:3,6:25,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],5:[function(t){t("loader").features.ins=!0},{loader:"G9z0Bl"}],6:[function(t){function e(){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var n=t("ee"),r=t("handle"),o=t(1),i=t(2);t("loader").features.stn=!0,t(3);var a=NREUM.o.EV;n.on("fn-start",function(t){var e=t[0];e instanceof a&&(this.bstStart=Date.now())}),n.on("fn-end",function(t,e){var n=t[0];n instanceof a&&r("bst",[n,e,this.bstStart,Date.now()])}),o.on("fn-start",function(t,e,n){this.bstStart=Date.now(),this.bstType=n}),o.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),this.bstType])}),i.on("fn-start",function(){this.bstStart=Date.now()}),i.on("fn-end",function(t,e){r("bstTimer",[e,this.bstStart,Date.now(),"requestAnimationFrame"])}),n.on("pushState-start",function(){this.time=Date.now(),this.startPath=location.pathname+location.hash}),n.on("pushState-end",function(){r("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),"addEventListener"in window.performance&&(window.performance.clearResourceTimings?window.performance.addEventListener("resourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.clearResourceTimings()},!1):window.performance.addEventListener("webkitresourcetimingbufferfull",function(){r("bstResource",[window.performance.getEntriesByType("resource")]),window.performance.webkitClearResourceTimings()},!1)),document.addEventListener("scroll",e,!1),document.addEventListener("keypress",e,!1),document.addEventListener("click",e,!1)}},{1:10,2:9,3:8,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],7:[function(t,e){function n(t){for(var e=t;e&&!e.hasOwnProperty("addEventListener");)e=Object.getPrototypeOf(e);e&&r(e)}function r(t){a.inPlace(t,["addEventListener","removeEventListener"],"-",o)}function o(t){return t[1]}var i=t("ee").get("events"),a=t(1)(i),s=t("gos");e.exports=i,r(window),"getPrototypeOf"in Object?(n(document),n(XMLHttpRequest.prototype)):XMLHttpRequest.prototype.hasOwnProperty("addEventListener")&&r(XMLHttpRequest.prototype),i.on("addEventListener-start",function(t){if(t[1]){var e=t[1];if("function"==typeof e){var n=s(e,"nr@wrapped",function(){return a(e,"fn-",null,e.name||"anonymous")});this.wrapped=t[1]=n}else"function"==typeof e.handleEvent&&a.inPlace(e,["handleEvent"],"fn-")}}),i.on("removeEventListener-start",function(t){var e=this.wrapped;e&&(t[1]=e)})},{1:26,ee:"QJf3ax",gos:"7eSDFh"}],8:[function(t,e){var n=t("ee").get("history"),r=t(1)(n);e.exports=n,r.inPlace(window.history,["pushState","replaceState"],"-")},{1:26,ee:"QJf3ax"}],9:[function(t,e){var n=t("ee").get("raf"),r=t(1)(n);e.exports=n,r.inPlace(window,["requestAnimationFrame","mozRequestAnimationFrame","webkitRequestAnimationFrame","msRequestAnimationFrame"],"raf-"),n.on("raf-start",function(t){t[0]=r(t[0],"fn-")})},{1:26,ee:"QJf3ax"}],10:[function(t,e){function n(t,e,n){t[0]=i(t[0],"fn-",null,n)}function r(t,e,n){this.method=n,this.timerDuration="number"==typeof t[1]?t[1]:0,t[0]=i(t[0],"fn-",this,n)}var o=t("ee").get("timer"),i=t(1)(o);e.exports=o,i.inPlace(window,["setTimeout","setImmediate"],"setTimer-"),i.inPlace(window,["setInterval"],"setInterval-"),i.inPlace(window,["clearTimeout","clearImmediate"],"clearTimeout-"),o.on("setInterval-start",n),o.on("setTimer-start",r)},{1:26,ee:"QJf3ax"}],11:[function(t,e){function n(t,e){e=e||this;var n=i.context(e);e.readyState>3&&!n.resolved&&(n.resolved=!0,i.emit("xhr-resolved",[],e));try{c.inPlace(e,l,"fn-",r)}catch(o){}}function r(t,e){return e}function o(t,e){for(var n in t)e[n]=t[n];return e}var i=t("ee").get("xhr"),a=t(1),s=t(2),c=s(i),f=s(a),u=NREUM.o,d=u.XHR,l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout","onreadystatechange"];e.exports=i,window.XMLHttpRequest=function(t){var e=new d(t);try{i.emit("new-xhr",[e],e),e.hasOwnProperty("addEventListener")&&f.inPlace(e,["addEventListener","removeEventListener"],"-",r),e.addEventListener("readystatechange",n,!1)}catch(o){try{i.emit("internal-error",[o])}catch(a){}}return e},o(d,XMLHttpRequest),XMLHttpRequest.prototype=d.prototype,c.inPlace(XMLHttpRequest.prototype,["open","send"],"-xhr-",r),i.on("send-xhr-start",n),i.on("open-xhr-start",n)},{1:7,2:26,ee:"QJf3ax"}],12:[function(t){function e(t){var e=this.params,r=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;u>o;o++)t.removeEventListener(f[o],this.listener,!1);if(!e.aborted){if(r.duration=(new Date).getTime()-this.startTime,4===t.readyState){e.status=t.status;var i=n(t,this.lastSize);if(i&&(r.rxSize=i),this.sameOrigin){var s=t.getResponseHeader("X-NewRelic-App-Data");s&&(e.cat=s.split(", ").pop())}}else e.status=0;r.cbTime=this.cbTime,c.emit("xhr-done",[t],t),a("xhr",[e,r,this.startTime])}}}function n(t,e){var n=t.responseType;if("json"===n&&null!==e)return e;var o="arraybuffer"===n||"blob"===n||"json"===n?t.response:t.responseText;return r(o)}function r(t){if("string"==typeof t&&t.length)return t.length;if("object"!=typeof t)return void 0;if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if("undefined"!=typeof FormData&&t instanceof FormData)return void 0;try{return JSON.stringify(t).length}catch(e){return void 0}}function o(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.sameOrigin=n.sameOrigin}var i=t("loader");if(i.xhrWrappable){var a=t("handle"),s=t(2),c=t("ee"),f=["load","error","abort","timeout"],u=f.length,d=t(1),l=t(3),p=window.XMLHttpRequest;i.features.xhr=!0,t(5),t(4),c.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=e,n.ended=!1,n.xhrGuids={},n.lastSize=null,l&&(l>34||10>l)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),c.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),c.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),c.on("send-xhr-start",function(t,e){var n=this.metrics,o=t[0],i=this;if(n&&o){var a=r(o);a&&(n.txSize=a)}this.startTime=(new Date).getTime(),this.listener=function(t){try{"abort"===t.type&&(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{c.emit("internal-error",[n])}catch(r){}}};for(var s=0;u>s;s++)e.addEventListener(f[s],this.listener,!1)}),c.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),c.on("xhr-load-added",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),c.on("xhr-load-removed",function(t,e){var n=""+d(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),c.on("addEventListener-end",function(t,e){e instanceof p&&"load"===t[0]&&c.emit("xhr-load-added",[t[1],t[2]],e)}),c.on("removeEventListener-end",function(t,e){e instanceof p&&"load"===t[0]&&c.emit("xhr-load-removed",[t[1],t[2]],e)}),c.on("fn-start",function(t,e,n){e instanceof p&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=(new Date).getTime()))}),c.on("fn-end",function(t,e){this.xhrCbStart&&c.emit("xhr-cb-time",[(new Date).getTime()-this.xhrCbStart,this.onload,e],e)})}},{1:"XL7HBI",2:13,3:15,4:11,5:7,ee:"QJf3ax",handle:"D5DuLP",loader:"G9z0Bl"}],13:[function(t,e){e.exports=function(t){var e=document.createElement("a"),n=window.location,r={};e.href=t,r.port=e.port;var o=e.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=e.hostname||n.hostname,r.pathname=e.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!e.protocol||":"===e.protocol||e.protocol===n.protocol,a=e.hostname===document.domain&&e.port===n.port;return r.sameOrigin=i&&(!e.hostname||a),r}},{}],14:[function(t,e){function n(t,e){return function(){r(t,[(new Date).getTime()].concat(i(arguments)),null,e)}}var r=t("handle"),o=t(1),i=t(2);"undefined"==typeof window.newrelic&&(newrelic=NREUM);var a=["setPageViewName","addPageAction","setCustomAttribute","finished","addToTrace","inlineHit"],s=["addPageAction"],c="api-";o(a,function(t,e){newrelic[e]=n(c+e,"api")}),o(s,function(t,e){newrelic[e]=n(c+e)}),e.exports=newrelic,newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),r("err",[t,(new Date).getTime()])}},{1:24,2:25,handle:"D5DuLP"}],15:[function(t,e){var n=0,r=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);r&&(n=+r[1]),e.exports=n},{}],gos:[function(t,e){e.exports=t("7eSDFh")},{}],"7eSDFh":[function(t,e){function n(t,e,n){if(r.call(t,e))return t[e];var o=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:o,writable:!0,enumerable:!1}),o}catch(i){}return t[e]=o,o}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],handle:[function(t,e){e.exports=t("D5DuLP")},{}],D5DuLP:[function(t,e){function n(t,e,n,o){r.buffer([t],o),r.emit(t,e,n)}var r=t("ee").get("handle");e.exports=n,n.ee=r},{ee:"QJf3ax"}],XL7HBI:[function(t,e){function n(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:i(t,o,function(){return r++})}var r=1,o="nr@id",i=t("gos");e.exports=n},{gos:"7eSDFh"}],id:[function(t,e){e.exports=t("XL7HBI")},{}],G9z0Bl:[function(t,e){function n(){if(!h++){var t=p.info=NREUM.info,e=f.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){s(d,function(e,n){t[e]||(t[e]=n)});var n="https"===u.split(":")[0]||t.sslForHttp;p.proto=n?"https://":"http://",a("mark",["onload",i()],null,"api");var r=f.createElement("script");r.src=p.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function r(){"complete"===f.readyState&&o()}function o(){a("mark",["domContent",i()],null,"api")}function i(){return(new Date).getTime()}var a=t("handle"),s=t(1),c=window,f=c.document;NREUM.o={ST:setTimeout,XHR:c.XMLHttpRequest,REQ:c.Request,EV:c.Event,PR:c.Promise,MO:c.MutationObserver},t(2);var u=(""+location).split("?")[0],d={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-885.min.js"},l=window.XMLHttpRequest&&XMLHttpRequest.prototype&&XMLHttpRequest.prototype.addEventListener&&!/CriOS/.test(navigator.userAgent),p=e.exports={offset:i(),origin:u,features:{},xhrWrappable:l};f.addEventListener?(f.addEventListener("DOMContentLoaded",o,!1),c.addEventListener("load",n,!1)):(f.attachEvent("onreadystatechange",r),c.attachEvent("onload",n)),a("mark",["firstbyte",i()],null,"api");var h=0},{1:24,2:14,handle:"D5DuLP"}],loader:[function(t,e){e.exports=t("G9z0Bl")},{}],24:[function(t,e){function n(t,e){var n=[],o="",i=0;for(o in t)r.call(t,o)&&(n[i]=e(o,t[o]),i+=1);return n}var r=Object.prototype.hasOwnProperty;e.exports=n},{}],25:[function(t,e){function n(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(0>o?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=n},{}],26:[function(t,e){function n(t){return!(t&&"function"==typeof t&&t.apply&&!t[i])}var r=t("ee"),o=t(1),i="nr@original",a=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t){function e(t,e,r,a){function nrWrapper(){var n,i,s,c;try{i=this,n=o(arguments),s="function"==typeof r?r(n,i):r||{}}catch(u){d([u,"",[n,i,a],s])}f(e+"start",[n,i,a],s);try{return c=t.apply(i,n)}catch(l){throw f(e+"err",[n,i,l],s),l}finally{f(e+"end",[n,i,c],s)}}return n(t)?t:(e||(e=""),nrWrapper[i]=t,u(t,nrWrapper),nrWrapper)}function c(t,r,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<r.length;c++)s=r[c],a=t[s],n(a)||(t[s]=e(a,f?s+o:o,i,s))}function f(e,n,r){if(!s){s=!0;try{t.emit(e,n,r)}catch(o){d([o,e,n,r])}s=!1}}function u(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){d([r])}for(var o in t)a.call(t,o)&&(e[o]=t[o]);return e}function d(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=r),e.inPlace=c,e.flag=i,e}},{1:25,ee:"QJf3ax"}]},{},["G9z0Bl",4,12,6,5]);</script>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="The personal portfolio site of Will Media Studio" />
+    <meta name="keywords" content="" />
+    <meta name="og:site_name" content="We Are Will" />
+    <meta name="og:title" content="We Are Will" />
+    <meta name="og:url" content="http://the-will.net/91670/work" />
+    <meta name="og:image" content="" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=968" />
+    
+    <title>We Are Will</title>
+
+    <link rel="shortcut icon" href="https://m1.behance.net/profiles4/176617/prosite/2-0-24b1517d7c09c2617f99ea307d6c5583.ico?cb=304501056"  />
+<link rel="apple-touch-icon" href="https://m1.behance.net/profiles4/176617/prosite/2-0-4347c166560bb8aa4242fd763d45de3b.png?cb=304501056"  />
+<link rel="stylesheet" type="text/css" href="http://m1.prosite.com/min/b=assets/css&amp;f=reset.css,base.css&amp;cb=304501056" />
+<link rel="stylesheet" type="text/css" href="http://m1.prosite.com/min/b=assets/css&amp;f=public-site.css,buttons.css,utils/fancybox.css&amp;cb=304501056" />
+<link rel="stylesheet" type="text/css" href="http://m1.prosite.com/css/templates/geometric.css?cb=304501056" />
+<link rel="stylesheet" type="text/css" href="http://09f5b95f07577c3787ac-4700da3968b055c32ff6308a7282a714.r56.cf2.rackcdn.com/176617-2343424.css?cb=304501056" />
+<script type="text/javascript" src="http://m1.prosite.com/min/b=assets/js&amp;f=jquery/jquery-1.6.2.js,jquery/jquery.fancybox.js,jquery/jquery.scrollTo-1.4.2.js,utils/default.js,public/shared.js,public/default.js&amp;cb=304501056"></script>
+<script type="text/javascript" src="http://use.typekit.com/okn4ywu.js"></script><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="text/javascript">
+      var Settings = {
+        'highdef'           : 1,
+        'social'            : {"pinterest":0,"googleplus":0,"twitter":0,"stumbleupon":0,"addthis":0,"linkedin":0,"facebook":1},
+        'appreciation'      : 0,
+        'show_appreciation' : 0,
+        'user_image_path'   : 'https://m1.behance.net/profiles4/176617/prosite/',
+        'STAT_URL'          : 'https://www.behance.net/c'
+      };
+
+      // Config already defined in untils/default.js
+      Config.NETWORK_URL    = 'https://www.behance.net';
+      Config.Fotomoto = {
+        'enabled'           : '1',
+        'store_id'          : '062032cf152e331e9c857f0603a6587b2823a420',
+        'affiliate_key'     : '3cf8221311026013',
+        'SCRIPT_URL'        : 'http://widget.fotomoto.com/stores/script/'
+      };
+
+    </script>
+
+    <style type="text/css">
+      html { overflow-y: scroll; } /* always show scrollbar to prevent content-shifting between pages of varying content height*/
+
+            .template-body, #preview-content {
+        -webkit-background-size: 1123px 1389px;
+      }
+      
+          </style>
+
+    
+    <!--[if lte IE 6]>
+      <link rel="stylesheet" type="text/css" href="http://m1.prosite.com/css/public/ie6.css" />
+      <script type="text/javascript" src="http://m1.prosite.com/css/iepngfix_tilebg.js"></script>
+    <![endif]-->
+
+    <!--[if lte IE 7]>
+      <script src="http://m1.prosite.com/js/utils/ie/IE7.js"></script>
+      <script src="http://m1.prosite.com/js/utils/ie/ie7-squish.js"></script>
+    <![endif]-->
+
+    <!--[if IE 7]>
+      <link rel="stylesheet" type="text/css" href="http://m1.prosite.com/css/public/ie7.css" />
+    <![endif]-->
+
+    <!--[if IE 8]>
+      <link rel="stylesheet" type="text/css" href="http://m1.prosite.com/css/public/ie8.css" />
+    <![endif]-->
+
+          <!-- Start Google Analytics -->
+        <script type="text/javascript">
+
+          var _gaq = _gaq || [];
+          // Track page view for Prosite as a hosting service
+          _gaq.push(['_setAccount', 'UA-1309100-28']);
+          _gaq.push(['_setDomainName', 'prosite.com']);
+          _gaq.push(['_trackPageview']);
+
+          
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+      <!-- End Google Analytics -->
+    
+
+      </head>
+    <body class="template-body cfix template-body-work">
+    <!-- primary content -->
+    <div id="site-container" class="cfix template-column centered-website">
+  <div id="logo-nav-container"  class="cfix"><div id="geometric-logo-container"  class="left template-column cfix template-column-1">
+  <div id="geometric-logo-wrap">
+  <div id="geometric-logo" class="image-optional overflow-hidden">
+<a href="/91670/work"><img src="https://m1.behance.net/profiles4/176617/prosite/2-2343424-8d1f7fed76624fd14105750f8f332698.jpg" /></a></div>
+  </div>
+</div>
+<div id="geometric-nav"  class="left template-column cfix template-column-2">
+
+
+<div class="geometric-nav-wrap cfix">
+  <ul id="geometric-nav-links" class="nav-links expandable">
+    
+<li  page_id="91670" class="page page-work page-91670 first-child">
+
+  <div class="nav-link-container">
+  <a href="/91670/work"  class="nav-link selected">Work</a></div></li>
+
+<li  page_id="91672" class="page page-custom page-91672">
+
+  <div class="nav-link-container">
+  <a href="/91672/about"  class="nav-link">About</a></div></li>
+
+<li  page_id="91671" class="page page-custom page-91671 last-child">
+
+  <div class="nav-link-container">
+  <a href="/91671/contact"  class="nav-link">Contact</a></div></li>
+<!-- page links are appended to this element -->
+  </ul>
+</div> <!--#geometric-nav-wrap-->
+
+
+</div> <!-- #geometric-nav -->
+</div><!-- .sort-group -->
+<div id="primary-container"  class="cfix"><div id="primary-content-wrap">
+
+  <div id="primary-content">
+    <div id="header-container"  class="cfix"><div id="geometric-header-container">
+<div id="geometric-header" class="image-optional overflow-hidden"><div id="geometric-header-image" class="image-optional overflow-hidden">
+<a href="/91670/1055024/work/will-reel-2013"><img src="https://m1.behance.net/profiles4/176617/prosite/2-2343424-8f135f75da0e55865d91f43eeade66e8.jpg" /></a></div>
+</div></div>
+</div><!-- .sort-group -->
+<div id="projects-container"  class="cfix">
+<div id="geometric-projects-container">
+
+<div id="geometric-projects">
+
+  <ul id="geometric-projects-width" class="cfix project-list expandable">
+    <li id="project-cover-6688236" class="left project-cover project-cover-6688236 first-in-row">
+<a id="project-image-6688236" class="project-image cfix" href="/91670/6688236/work/intel-core-4th-i3_pr">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/26351539/2-2343424-2-228x187-c33710030f85d171e990cab435b8f7c9.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/67048b26351539.555ad49f94f17.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">Intel Core 4th i3_PR</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">Intel_Core 4th i3</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2015</span>
+            <span class="project-fields display-block">Computer Animation, Motion Graphics</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li><li id="project-cover-1804016" class="left project-cover project-cover-1804016">
+<a id="project-image-1804016" class="project-image cfix" href="/91670/1804016/work/ofestra-opening">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/10852237/2-2343424-2-228x187-2c3ac8bd67938edc32d2ed51b52207e2.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/10852237.548092106a996.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">Ofestra 시음회 Opening</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">Ofestra 시음회 Opening</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2013</span>
+            <span class="project-fields display-block">Animation, Motion Graphics, Visual Effects</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li><li id="project-cover-1727285" class="left project-cover project-cover-1727285">
+<a id="project-image-1727285" class="project-image cfix" href="/91670/1727285/work/tuntun-english-junior_spot">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/10511801/2-2343424-2-228x187-4c832f1c8b99793ad42604499fe0cb8e.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/10511801.5480190b6d196.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">TunTun English Junior_Spot</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">튼튼영어_Spot<br />
+</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2013</span>
+            <span class="project-fields display-block">Graphic Design, Motion Graphics, Visual Effects</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li><li id="project-cover-1074496" class="left project-cover project-cover-1074496 last-in-row">
+<a id="project-image-1074496" class="project-image cfix" href="/91670/1074496/work/ftn_ch-id-pkg">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/7025299/2-2343424-2-228x187-8f1a48239a70393e148ce3737583a847.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/7025299.546fb49711f33.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">FTN_CH ID PKG</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">FTN Ch ID PKG</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2013</span>
+            <span class="project-fields display-block">Branding, Graphic Design, Motion Graphics</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li><li id="project-cover-1041292" class="left project-cover project-cover-1041292 first-in-row">
+<a id="project-image-1041292" class="project-image cfix" href="/91670/1041292/work/taiwan-airport_pr-film">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/6836113/2-2343424-2-228x187-41cdf71ceeb4a62cd96ec4f81c386f1b.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/6836113.546eb0a726f17.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">Taiwan Airport_PR Film</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">대만공항_Promotion Film</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2013</span>
+            <span class="project-fields display-block">Calligraphy, Digital Art, Motion Graphics</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li><li id="project-cover-887389" class="left project-cover project-cover-887389">
+<a id="project-image-887389" class="project-image cfix" href="/91670/887389/work/k-boom-tv_ch-id">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/5946003/2-2343424-2-228x187-d2ecd3b9cdd205e63b0bd17ffcb4b207.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/5946003.5469f32676a2f.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">K-Boom TV_CH ID</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">K-Boom TV_CH ID</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2012</span>
+            <span class="project-fields display-block">Art Direction, Graphic Design, Motion Graphics</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li><li id="project-cover-1035254" class="left project-cover project-cover-1035254">
+<a id="project-image-1035254" class="project-image cfix" href="/91670/1035254/work/krivet_pkg">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/6801687/2-2343424-2-228x187-3d1013a080aace3e5fbf8065f88e7f32.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/6801687.546e811c9dd54.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">KRIVET_PKG</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">한국 직업능력개발원_Promotion Movie PKG</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2013</span>
+            <span class="project-fields display-block">Graphic Design, Motion Graphics, Set Design</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li><li id="project-cover-836570" class="left project-cover project-cover-836570 last-in-row">
+<a id="project-image-836570" class="project-image cfix" href="/91670/836570/work/korea-aerospace-university">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/5622993/2-2343424-2-228x187-2675ecff72b934d846f08a40aceaed28.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/5622993.54683bfaac616.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">KOREA AEROSPACE UNIVERSITY</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">한국항공대학교<br />
+Promotion REEL</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2012</span>
+            <span class="project-fields display-block">Graphic Design, Motion Graphics, Visual Effects</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li><li id="project-cover-834453" class="left project-cover project-cover-834453 first-in-row">
+<a id="project-image-834453" class="project-image cfix" href="/91670/834453/work/i-want-taoist-fairy(-)-kbs-tv-intro">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/5609891/2-2343424-2-228x187-63dca7196558b10155417938b152e431.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/5609891.546829b5d4898.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">I WANT TAOIST FAIRY(선녀가 필요해) KBS tv intro</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">선녀가 필요해<br />
+KBS2 TV TITLE<br />
+Direction_Will Media Studio</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2012</span>
+            <span class="project-fields display-block">Digital Art, Motion Graphics, Visual Effects</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li><li id="project-cover-921400" class="left project-cover project-cover-921400">
+<a id="project-image-921400" class="project-image cfix" href="/91670/921400/work/follow-me_tv-title">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/6150325/2-2343424-2-228x187-03171b168d677c2126b98df15b9b92d1.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/6150325.546b08a18f999.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">Follow Me_TV Title</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">Fashion N Ch_TV TITLE<br />
+Follow Me</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2012</span>
+            <span class="project-fields display-block">Art Direction, Digital Art, Motion Graphics</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li><li id="project-cover-836607" class="left project-cover project-cover-836607">
+<a id="project-image-836607" class="project-image cfix" href="/91670/836607/work/global-super-idol(gsi)-tv-intro">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/5623197/2-2343424-2-228x187-b94173c4435587f143bed44c06a29256.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/5623197.54683c2e81a12.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">GLOBAL SUPER IDOL(GSI) tv intro</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">글로벌슈퍼아이돌<br />
+TV TITLE</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2012</span>
+            <span class="project-fields display-block">Graphic Design, Motion Graphics</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li><li id="project-cover-836622" class="left project-cover project-cover-836622 last-in-row">
+<a id="project-image-836622" class="project-image cfix" href="/91670/836622/work/launch-my-life-tv-intro">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/5623293/2-2343424-2-228x187-839961eddd1c794d6bd6393fdfd5df9d.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/5623293.54683c4b5992f.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">LAUNCH MY LIFE tv intro</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">Launch my life<br />
+OnStyle_TV TITLE</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2012</span>
+            <span class="project-fields display-block">Graphic Design, Illustration, Motion Graphics</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li><li id="project-cover-837044" class="left project-cover project-cover-837044 first-in-row">
+<a id="project-image-837044" class="project-image cfix" href="/91670/837044/work/life-is-education-promotion">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/5625835/2-2343424-2-228x187-d8d1ff1e4eaca675e07eeed8b3dc16dd.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/5625835.54683fd93e0be.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">LIFE IS education promotion</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">Life Is_Education Promotion</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2012</span>
+            <span class="project-fields display-block">Graphic Design, Motion Graphics, Photography</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li><li id="project-cover-837281" class="left project-cover project-cover-837281">
+<a id="project-image-837281" class="project-image cfix" href="/91670/837281/work/samsung-mobile">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/5627301/2-2343424-2-228x187-6ef3985c777c980cf62bfe0a96c7006f.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/5627301.546841edbc9a0.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">SAMSUNG MOBILE</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">Illustration Animation</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2012</span>
+            <span class="project-fields display-block">Animation, Graphic Design, Motion Graphics</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li><li id="project-cover-834473" class="left project-cover project-cover-834473">
+<a id="project-image-834473" class="project-image cfix" href="/91670/834473/work/gossip-house-tv-intro">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/5609991/2-2343424-2-228x187-860621292412aac6a74619e82028b5ac.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/5609991.546829d743666.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">GOSSIP HOUSE tv intro</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">Gossip House<br />
+OnStyle TV Title</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2012</span>
+            <span class="project-fields display-block">Art Direction, Digital Art, Motion Graphics</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li><li id="project-cover-834481" class="left project-cover project-cover-834481 last-in-row">
+<a id="project-image-834481" class="project-image cfix" href="/91670/834481/work/moneual-product-promotion">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/5610085/2-2343424-2-228x187-4d32cc0b660150dbf7762a842cc0dc95.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/5610085.546829f998d99.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">MONEUAL product promotion</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">Moneual A10<br />
+Product Promotion</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2012</span>
+            <span class="project-fields display-block">Graphic Design, Motion Graphics, Product Design</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li><li id="project-cover-837050" class="left project-cover project-cover-837050 first-in-row">
+<a id="project-image-837050" class="project-image cfix" href="/91670/837050/work/vampire-idol-tv-intro">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/5625913/2-2343424-2-228x187-db4a587cf17d3bf950881bee25fb819c.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/5625913.54683ff6a7fdf.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">VAMPIRE IDOL tv intro</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">Vampire Idol_TV Title</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2012</span>
+            <span class="project-fields display-block">Graphic Design, Motion Graphics</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li><li id="project-cover-839418" class="left project-cover project-cover-839418">
+<a id="project-image-839418" class="project-image cfix" href="/91670/839418/work/foshan-exhibition-promotion">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/5642449/2-2343424-2-228x187-5ecc874ced7e85bd7d5837aa160266a5.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/5642449.54685669b0987.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">FOSHAN, EXHIBITION promotion</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">Bulsan_Exhibit Movie_Reel</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2012</span>
+            <span class="project-fields display-block">Exhibition Design, Motion Graphics, Visual Effects</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li><li id="project-cover-834411" class="left project-cover project-cover-834411">
+<a id="project-image-834411" class="project-image cfix" href="/91670/834411/work/funny-life">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/662707/2-2343424-2-228x187-dcdf1a7c3ff57d3e1f7ba06bb0a345bd.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/662707.544138f54c53c.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">FUNNY LIFE</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">2010_Funny Life</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2012</span>
+            <span class="project-fields display-block">Motion Graphics</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li><li id="project-cover-839461" class="left project-cover project-cover-839461 last-in-row">
+<a id="project-image-839461" class="project-image cfix" href="/91670/839461/work/wanna-bat-game-promotion">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/5642717/2-2343424-2-228x187-b87fa266132def3571035783b4225c55.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/5642717.546856b7c913e.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">WANNA BAT game promotion</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">Wanna Bat_Game Spot</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2012</span>
+            <span class="project-fields display-block">Graphic Design, Motion Graphics, Visual Effects</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li><li id="project-cover-837057" class="left project-cover project-cover-837057 first-in-row">
+<a id="project-image-837057" class="project-image cfix" href="/91670/837057/work/aion-25(update)-online-spot">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/5626023/2-2343424-2-228x187-5fc43b0cd27f8a233c5d3fa8c9a12e7e.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/5626023.5468401e06b3e.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">AION 2.5(update) online spot</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">Aion_Promotion</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2012</span>
+            <span class="project-fields display-block">Graphic Design, Motion Graphics</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li><li id="project-cover-839431" class="left project-cover project-cover-839431">
+<a id="project-image-839431" class="project-image cfix" href="/91670/839431/work/hamlet-musical-tv-spot">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/5642533/2-2343424-2-228x187-1c9983dfd1bae95c02402e3c3a0d390f.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/5642533.54685689276e9.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">HAMLET MUSICAL tv spot</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">Hamlet Musical_TV Spot<br />
+</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2012</span>
+            <span class="project-fields display-block">Computer Animation, Digital Art, Motion Graphics</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li><li id="project-cover-1055024" class="left project-cover project-cover-1055024">
+<a id="project-image-1055024" class="project-image cfix" href="/91670/1055024/work/will-reel-2013">
+  
+  <!-- start cover effect spans -->
+  <span class="project-image-dummy display-block project-image-image-overlay constrain-to-image overflow-hidden">
+    <img src="https://m1.behance.net/profiles4/176617/prosite/projects/6912451/2-2343424-2-228x187-6b1fe26d506c7091ee86b8e6f4eed192.jpg" class="project-image-on" />
+  </span>
+  <span class="project-image-dummy display-block project-image-color-overlay constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-stroke constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-box-shadow constrain-to-image"></span>
+  <span class="project-image-dummy display-block project-image-gradient-overlay constrain-to-image"></span>
+  <!-- end cover effect spans -->
+  
+  <span class="overflow-hidden project-image-inner display-block">
+    
+    <img src="https://mir-s3-cdn-cf.behance.net/projects/202/6912451.546f18afad2d2.jpg" class="project-image-off" />
+    
+    <span class="project-info-container display-block">
+      <span class="project-info-margins display-block">
+        <span class="project-info display-block">
+          
+          <span class="project-hovercover-title-divider display-block">
+            <span class="project-title-wrap display-block">
+              <span class="project-title display-block">Will REEL 2013</span>
+            </span>
+          </span>
+          
+          <span class="project-description display-block">WILL Media Studio<br />
+2013 REEL</span>
+          
+          <span class="project-divider-container cfix display-block">
+            
+            <span class="project-hovercover-published-date-divider display-block">
+              <span class="project-published-dummy display-block">&nbsp;</span>
+              <span class="project-fields-dummy display-block">&nbsp;</span>
+            </span> <!-- .project-hovercover-published-date-divider -->
+            
+            <span class="project-published display-block">2013</span>
+            <span class="project-fields display-block">Art Direction, Computer Animation, Motion Graphics</span>
+            
+          </span> <!-- .project-divider-container -->
+          
+        </span> <!-- .project-info -->
+      </span> <!-- .project-info-margins -->
+    </span> <!-- .project-info-container -->
+    
+  </span> <!-- .project-image-dinner -->
+  
+</a> <!-- .project-image -->
+</li>  </ul>
+
+</div> <!-- #key-projects -->
+
+
+</div> <!-- #key-projects-container -->
+</div><!-- .sort-group -->
+  </div> <!-- #primary-content -->
+
+</div> <!-- #primary-content-wrap -->
+
+</div><!-- .sort-group -->
+<div id="footer-container"  class="cfix"><div id="geometric-footer-group">
+<div id="geometric-footer-container">
+  <div id="geometric-footer" class="footer-text">
+    <span>All works &copy; Will Media Studio 2012.<br />
+Please do not reproduce without the expressed written consent of Will Media Studio. Powered by ProSite.</span>
+  </div> <!-- #geometric-footer -->
+</div> <!-- #geometric-footer-container -->
+</div> <!-- #geometric-footer-group -->
+</div><!-- .sort-group -->
+</div> <!-- #site-container -->
+    
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"926bef25e7","applicationID":"12024645","transactionName":"YwRUYkIFC0pQBUNbWVpOY0RZSwxXVQNPHEZcEQ==","queueTime":0,"applicationTime":46,"atts":"T0NXFAofGEQ=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+
+</html>
