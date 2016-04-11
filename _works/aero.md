@@ -3,7 +3,9 @@ layout: work
 title: 한국한공대학교
 icon: aero.jpg
 vimeo: 51901791
-
+client: "My Client"
+agency: "My Agency"
+produce: "Will Media Studio"
 ---
 
 Will Media Studio는
