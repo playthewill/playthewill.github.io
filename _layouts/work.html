@@ -4,13 +4,13 @@ layout: default
 
 <div class="container">
   <div class="row">
-    <div class="col-md-12 vimeo_cont">
-      <iframe class="vimeo" src="https://player.vimeo.com/video/{{ page.vimeo }}?title=0&byline=0&portrait=0"  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <div class="col-md-12 vimeo-preview">
+      <a href="#"><img src="/img/{{ page.icon }}" class="img-responsive play-image" width="100%" alt="Play"></a>
     </div>
+
   </div>
 
   <div class="row">
-
     <div class="col-md-12">
       <h1 class="post-title text-primary">{{ page.title }}</h1>
     </div>
@@ -22,15 +22,14 @@ layout: default
         <li class="list-group-item"><span class="label label-primary">Produce</span> {{ page.produce }}</li>
       </ul>
     </div>
+
     <div class="col-md-8 well">
-    {{ content }}
-
+      {{ content }}
     </div>
+  </div> <!-- row -->
 
-
-
-
-  <div class="post-content">
-  </div>
-
-</div>
+  <script>
+  $( "img.play-image" ).click(function() {
+    $( "div.vimeo-preview" ).replaceWith( "<div class=\"embed-responsive embed-responsive-16by9\"><iframe class=\"embed-responsive-item\" src=\"https://player.vimeo.com/video/{{ page.vimeo }}?autoplay=1&title=0&byline=0&portrait=0\"></iframe></div>" );
+  });
+  </script>
